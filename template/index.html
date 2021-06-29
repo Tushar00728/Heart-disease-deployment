@@ -9,6 +9,71 @@
     <title> Heart Disease Prediction</title>
 </head>
 
+<style>
+    
+    input[type=text], select {
+        width:80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        box_sizing: border-box;
+        font_weight:bolder;
+    }
+
+    input[type=submit] {
+        width: 80%;
+        background-color: goldenrod;
+        color:black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size:100;
+        font-weight: bolder;
+    }
+
+    form{
+        border-radius: 10px;
+        padding-top: 5%;
+        font-weight: bolder;
+    }
+
+    div {
+ 
+        border-radius: 5px;
+        margin-left: 35%;
+         width: 30%;
+  
+    }
+
+    h1{
+        color: goldenrod;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    h3{
+        color: white;
+    }
+
+    body {
+            
+            background-image: url("../static/img/heart.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding: 0px;
+        }
+       
+
+
+
+
+</style>
+
+
+
 <body>
     <div class = "pred">
         <h1> Heart Disease Predictor</h1>
@@ -18,8 +83,8 @@
             <input type= "text" name= "age" placeholder="eg: 64" required = "required" /> <br>
             <label for = "sex">Sex</label><br>
             <select id ="sex" name="gender">
-                <option value="0">0:female</option>
-                <option value="1">1:male</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
             </select><br>
             <label for = "chest pain">Chest Pain Type</label><br>
             <select id = "CP" name ="Chest_Pain">
@@ -56,9 +121,9 @@
             <input type= "text" name= "oldpeak" placeholder="eg: 2.3" required = "required" /> <br>
             <label for = "slope">Slope</label><br>
             <select id ="Slopee" name= "slopeex">
-                <option value="0">0:Upsloping</option>
-                <option value="1">1:Flatsloping</option>
-                <option value="2">2:Downsloping</option>
+            <option value="0">0:Upsloping</option>
+            <option value="1">1:Flatsloping</option>
+            <option value="2">2:Downsloping</option>
             </select><br>
             <label for = "Ca">ca</label><br>
             <select id="CA" name="ca">
@@ -76,12 +141,12 @@
                 
 
 
-            <input type="submit" value="Predict Heart Diease">
+            <input type="submit" value="Predict Heart Disease">
 
         </form> 
         <br>
         <br>
-        <h3>{{prediction_text}}</h3>
+        <h3>{{prediction_text}}<h3>
     </div>
 
 
