@@ -1,2 +1,2 @@
 # Heart-disease-deployment
-Initial deployed model of the heart disease classifier
+Initial deployed model of the heart disease classifier on Heroku platform
